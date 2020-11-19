@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Today's Headlines</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {% load static %}
+		<link rel="stylesheet" href="{% static 'polls/assets/css/main.css' %}" />
+	</head>
+	<style>
+	body{
+			background:url("{% static 'polls/images/sunset.jpg' %}") no-repeat center center fixed;
+			-webkit-background-size:cover;
+			-moz-backgroung-size:cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="/mainpage">Today's Headlines</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#">Latest</a></li>
+								<li><a href="#">Trending</a></li>
+								<li><a href="#">Selected</a></li>
+								<li><a href="#">Popular</a></li>
+								<li><a href="#">New</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Fitness</h3>
+											<p>Look at the things which you are lacking in your routine.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Earn money</h3>
+											<p>Want to get rich in 1 month.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Stocks</h3>
+											<p>Get the latest stocks.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Weather</h3>
+											<p>Stay up to date with our daily feed.</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="{% url 'login' %}" class="button large fit">Logout</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Absolute Success is Luck. Relative Success is Hard Work.</a></h2>
+										<p>Luck or Hard Work?</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">June 13, 2020</time>
+										<a href="#" class="author"><span class="name">Tanmay</span><img src="{% static 'polls/images/user.jpg' %}" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="{% static 'polls/images/brain.gif' %}" alt="" /></span>
+								<p><i><b>In 1997, Warren Buffett, the famous investor and multi-billionaire, proposed a thought experiment.</b></i><br>
+
+									“Imagine that it is 24 hours before you are going to be born,” he said, “and a genie comes to you.” ;
+
+									“The genie says you can determine the rules of the society you are about to enter and you can design anything you want. You get to design the social rules, the economic rules, the governmental rules. And those rules are going to prevail for your lifetime and your children's lifetime and your grandchildren's lifetime.”;
+
+									“But there is a catch,” he said.;
+
+									“You don't know whether you're going to be born rich or poor, male or female, infirm or able-bodied, in the United States or Afghanistan. All you know is that you get to take one ball out of a barrel with 5.8 billion balls in it. And that's you.”;
+
+									;“In other words,” Buffett continues, “you're going to participate in what I call the Ovarian Lottery. And that is the most important thing that's ever going to happen to you in your life. It's going to determine way more than what school you go to, how hard you work, all kinds of things.”
+
+									Buffett has long been a proponent for the role of luck in success. In his 2014 Annual Letter, he wrote, “Through dumb luck, [my business partner] Charlie and I were born in the United States, and we are forever grateful for the staggering advantages this accident of birth has given us.”
+
+									When explained in this way, it seems hard to deny the importance of luck, randomness, and good fortune in life. And indeed, these factors play a critical role. But let's consider a second story.</p>
+								<p><i>The Story of Project 523</i><br>
+									In 1969, during the fourteenth year of the Vietnam War, a Chinese scientist named Tu Youyou was appointed the head of a secret research group in Beijing. The unit was known only by its code name: Project 523.
+
+									China was an ally with Vietnam, and Project 523 had been created to develop antimalarial medications that could be administered to the soldiers. The disease had become a huge problem. Just as many Vietnamese soldiers were dying from malaria in the jungle as were dying in battle.
+
+									Tu began her work by looking for clues anywhere she could find them. She read manuals about old folk remedies. She searched through ancient texts that were hundreds or thousands of years old. She traveled to remote regions in search of plants that might contain a cure.
+
+									After months of work, her team had collected over 600 plants and created a list of almost 2,000 possible remedies. Slowly and methodically, Tu narrowed the list of potential medications down to 380 and tested them one-by-one on lab mice.
+
+									“This was the most challenging stage of the project,” she said. “It was a very laborious and tedious job, in particular when you faced one failure after another.”
+
+									Hundreds of tests were run. Most of them yielded nothing. But one test—an extract from the sweet wormwood plant known as qinghao—seemed promising. Tu was excited by the possibility, but despite her best efforts, the plant would only occasionally produce a powerful antimalarial medication. It wouldn’t always work.
+
+									Her team had already been at work for two years, but she decided they needed to start again from the beginning. Tu reviewed every test and re-read each book, searching for a clue about something she missed. Then, magically, she stumbled on a single sentence in The Handbook of Prescriptions for Emergencies, an ancient Chinese text written over 1,500 years ago.
+
+									The issue was heat. If the temperature was too high during the extraction process, the active ingredient in the sweet wormwood plant would be destroyed. Tu redesigned the experiment using solvents with a lower boiling point and, finally, she had an antimalarial medication that worked 100 percent of the time.
+
+									It was a huge breakthrough, but the real work was just beginning.</p>
+								<p><i>The Power of Hard Work</i><br>
+									With a proven medication in hand, it was now time for human trials. Unfortunately, there were no centers in China performing trials for new drugs at the time. And due to the secrecy of the project, going to a facility outside of the country was out of the question.
+
+								They had reached a dead end.
+
+								That’s when Tu volunteered to be the first human subject to try the medication. In one of the boldest moves in the history of medical science, she and two other members of Project 523 infected themselves with malaria and received the first doses of their new drug.
+
+								It worked.
+
+								However, despite her discovery of a breakthrough medication and her willingness to put her own life on the line, Tu was prevented from sharing her findings with the outside world. The Chinese government had strict rules that blocked the publishing of any scientific information.
+
+								She was undeterred. Tu continued her research, eventually learning the chemical structure of the drug—a compound officially known as artemisinin—and going on to develop a second antimalarial medication as well.
+
+								It was not until 1978, almost a decade after she began and three years after the Vietnam War had ended, that Tu’s work was finally released to the outside world. She would have to wait until the year 2000 before the World Health Organization would recommend the treatment as a defense against malaria.
+
+								Today, the artemisinin treatment has been administered over 1 billion times to malaria patients. It is believed to have saved millions of lives. Tu Youyou is the first female Chinese citizen to receive a Nobel Prize, and the first Chinese person to receive the Lasker Award for major contributions to medical science.
+								</p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart"><b>515</b></a></li>
+										<li><a href="#" class="icon solid fa-comment"><b>86</b></a></li>
+										<li><a href="#"><b>Report</b></a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright"><b>&copy; Untitled. Design by Tejas and Dhruv: <a href="#">Today's Headlines</a>. Images: <a href="#">Google</a>.</b></p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'polls/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/util.js' %}"></script>
+			<script src="{% static 'polls/assets/js/main.js' %}"></script>
+
+	</body>
+</html>

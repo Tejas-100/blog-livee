@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Today's Headlines</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {% load static %}
+		<link rel="stylesheet" href="{% static 'polls/assets/css/main.css' %}" />
+	</head>
+	<style>
+	body{
+			background:url("{% static 'polls/images/sunset.jpg' %}") no-repeat center center fixed;
+			-webkit-background-size:cover;
+			-moz-backgroung-size:cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="/mainpage">Today's Headlines</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#">Latest</a></li>
+								<li><a href="#">Trending</a></li>
+								<li><a href="#">Selected</a></li>
+								<li><a href="#">Popular</a></li>
+								<li><a href="#">New</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Fitness</h3>
+											<p>Look at the things which you are lacking in your routine.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Earn money</h3>
+											<p>Want to get rich in 1 month.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Stocks</h3>
+											<p>Get the latest stocks.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Weather</h3>
+											<p>Stay up to date with our daily feed.</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="{% url 'login' %}" class="button large fit">Logout</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">‘BOOST TO INDIAN AIR FORCE’: RUDRAM MISSILE TO BE INDUCTED BY 2022, SAY TOP OFFICIALS</a></h2>
+										<p>Indian Air Force’s capabilities to knock out enemy radars--Damn</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">November 10, 2019</time>
+										<a href="#" class="author"><span class="name">Jatin</span><img src="{% static 'polls/images/user.jpg' %}" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="{% static 'polls/images/flight.gif' %}" alt="" /></span>
+								<p><i>New Delhi: India’s first anti-radiation missile ‘Rudram’ will be ready for induction into service by 2022 and will boost the Indian Air Force’s capabilities to knock out enemy radars and surveillance systems, top officials familiar with the developments said on Friday.</i></p>
+								<p>The indigenous missile, being developed by the Defence Research and Development Organisation (DRDO) for the IAF, was tested for the first time in the anti-radiation mode from a Sukhoi-30 fighter jet on October 9 against a target on Wheeler Island off the Odisha coast. “We plan to carry out six to seven more tests before declaring the weapon ready for induction by 2022. The missile’s passive homing head can detect, classify and engage targets over a wide band of frequencies as programmed,” the officials said.
+
+									<br><br>The missile will help the air force take out enemy air defence systems from large stand-off ranges. “With this, the country has established indigenous capability to develop long-range air-launched anti-radiation missiles for neutralising enemy radars, communication sites and other RF emitting targets,” the defence ministry announced on October 9 when the missile’s maiden test was conducted. While the Rudram is likely to be tested again from a Su-30 jet by the year-end, India is also developing a new air-launched missile capable of knocking out enemy tanks from a stand-off distance of more than 10 kilometres and a crucial test of the weapon will be conducted in two months, as reported by Hindustan Times on October 22.
+
+									<br>The indigenous missile - named stand-off anti-tank missile (SANT) -- is expected to be mated to the IAF’s Russian-origin Mi-35 attack helicopters to arm them with the capability to destroy enemy armour from an improved stand-off range. The existing Russian-origin Shturm missile on the Mi-35 can target tanks at a range of 5 kilometres. The SANT, also being developed by the DRDO, will be launched from a Mi-35 helicopter gunship for the first time in December in what is being seen as a developmental milestone.
+
+									<br>The SANT missile was successfully tested from a ground launcher on October 19 off the coast of Odisha - the 13th test-firing of a missile by India in less than two months amid the border stand-off with China and deadlocked talks to reduce tensions along the contested Line of Actual Control (LAC). The DRDO is also planning to test the ‘Nirbhay’ sub-sonic cruise missile again after a failed test on October 12 when the weapon was tested with an indigenous engine for the first time. “We are looking at increasing the indigenous content in the missile. Development trials of the missile with the Russian engine were completed last year. A high-powered panel is examining what went wrong with the October 12 launch. We will fix the snag and test the missile again soon,” the officials said.
+
+									<br><br>The key tests recently conducted by India include the supersonic missile-assisted release of torpedo (SMART) to target submarines at long ranges and a new version of the nuclear-capable hypersonic Shaurya missile with a range of 750 kilometres.<br>
+
+									<br>India is also developing a new class of ultra-modern weapons that can travel six times faster than the speed of sound (Mach 6) and penetrate any missile defence. In early September, the DRDO carried out a successful flight test of the hypersonic technology demonstrator vehicle (HSTDV) for the first time from a launch facility off the Odisha coast. Only the United States, Russia and China have developed technologies to field fast-manoeuvring hypersonic missiles that fly at lower altitudes and are extremely hard to track and intercept. India could develop hypersonic cruise missiles powered by air-breathing scramjet engines in about four years.</p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart"><b>515</b></a></li>
+										<li><a href="#" class="icon solid fa-comment"><b>86</b></a></li>
+										<li><a href="#"><b>Report</b></a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright"><b>&copy; Untitled. Design by Tejas and Dhruv: <a href="#">Today's Headlines</a>. Images: <a href="#">Google</a>.</b></p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'polls/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/util.js' %}"></script>
+			<script src="{% static 'polls/assets/js/main.js' %}"></script>
+
+	</body>
+</html>

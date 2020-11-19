@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Today's Headlines</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {% load static %}
+		<link rel="stylesheet" href="{% static 'polls/assets/css/main.css' %}" />
+	</head>
+	<style>
+	body{
+			background:url("{% static 'polls/images/sunset.jpg' %}") no-repeat center center fixed;
+			-webkit-background-size:cover;
+			-moz-backgroung-size:cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	</style>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="/mainpage">Today's Headlines</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="#">Latest</a></li>
+								<li><a href="#">Trending</a></li>
+								<li><a href="#">Selected</a></li>
+								<li><a href="#">Popular</a></li>
+								<li><a href="#">New</a></li>
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Fitness</h3>
+											<p>Look at the things which you are lacking in your routine.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Earn money</h3>
+											<p>Want to get rich in 1 month.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Stocks</h3>
+											<p>Get the latest stocks.</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Weather</h3>
+											<p>Stay up to date with our daily feed.</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="{% url 'login' %}" class="button large fit">Logout</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">MAKE ONE Crore Rupees IN ONE Month</a></h2>
+										<p>Is this a joke or is it?</p>
+									</div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">January 3, 2020</time>
+										<a href="#" class="author"><span class="name">Shravni</span><img src="{% static 'polls/images/f-user.png' %}" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="{% static 'polls/images/moneyy.gif' %}" alt="" /></span>
+								<p>I read a story about a college student who came up with an idea to help him pay for college. This was back in the earlier days of the internet. He put up a simple website which was a single page that was one big graphic. He then offered to sell 'real estate' in the form of pixels. Advertisers would purchase space at ₹70 per pixel, and submit small graphical ads a number of pixels wide by high. This was one of the earlier 'memes' and it had attracted enough attention that he was actually able to generate demand. He ended up selling 1 lakh pixels, and earning ₹1 crore. Thanks to this clever idea. I think it was called 'the crore rupees home page' or something like that. (you can google it).</p>
+
+								<p>Another example - Nowadays, a simple app can net you a lot of rupees. Another example I can think of is the modern version of 'the pet rock' in the form of a guy who made an 'app' marketed as a ghost finder. It claimed that it used the sensors of the phone to identify spirit activity. A fun and easy to create app that i think sold for ₹1 and netted worth of a crores sales.</p>
+
+								<p>Now obviously these ideas are spent, but the key is to adopt a mind-set that can identify and develop similar ideas. These are obviously just non-concrete 'notions', but if they trigger a new way of thinking for you then just about anything's possible. 30 days is a bit tougher. That would depend on whatever scheme you come up with.</p>
+
+								<p>So use these examples as inspiration - good luck!</p>
+								<footer>
+									<ul class="stats">
+										<li><a href="#" class="icon solid fa-heart"><b>515</b></a></li>
+										<li><a href="#" class="icon solid fa-comment"><b>86</b></a></li>
+										<li><a href="#"><b>Report</b></a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright"><b>&copy; Untitled. Design by Tejas and Dhruv: <a href="#">Today's Headlines</a>. Images: <a href="#">Google</a>.</b></p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'polls/assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'polls/assets/js/util.js' %}"></script>
+			<script src="{% static 'polls/assets/js/main.js' %}"></script>
+
+	</body>
+</html>
