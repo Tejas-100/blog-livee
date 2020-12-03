@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="{% static 'polls/assets/css/main.css' %}" />
 
 
+
 	</head>
 	<style>
 		body{
@@ -17,6 +18,15 @@
 			-moz-backgroung-size:cover;
 			-o-background-size: cover;
 			background-size: cover;
+		}
+		.name123{
+            display: flex;
+            text-decoration: none;
+			color:black;
+			transition: transform 0.2s ease, color 0.2s ease;
+		}
+		.name123:hover{
+			color:skyblue;
 		}
 	</style>
 	<body class="is-preload">
@@ -50,7 +60,7 @@
 								</li>
 							</ul>
 							-->
-							<a href="#" class="author"><span class="name"><b>Hello, {{request.user}}</b></span><img src="{% static 'polls/images/profile.gif' %}" alt="" /></a>
+							<a href="#" class="author"><span class="name123"><b>Hello, {{request.user}}</b></span><img src="{% static 'polls/images/profile.gif' %}" alt="" /></a>
 
 						</nav>
 					</header>

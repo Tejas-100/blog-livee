@@ -3,13 +3,14 @@
 {% load static %}
 <head>
 	<title>Login</title>
-    <link rel="shortcut icon" href="{% static 'polls/images/head.jpg' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'polls/images/head.jpg' %}" type="image/x-icon" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <script src="{% static 'polls/assets/js/scroll.js' %}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
+
 
 	<style>
         ::-webkit-scrollbar {
@@ -46,7 +47,7 @@
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			border-radius: 5px;
+			border-radius: 10px;
 			opacity: 90%;
 
 		}
@@ -57,14 +58,27 @@
 
 		#form-title{
 			color: #fff;
+			transition: transform 1s ease, color 1s ease;
+            font-weight: 500;
+            font-size: 2em;
 
 		}
-
+        #form-title:hover{
+            color: purple;
+        }
+/* env\Scripts\activate */
+/* py manage.py runserver */
 		.login_btn {
 			width: 100%;
 			background: #33ccff !important;
-			color: white !important;
+			color: white;
+            transition: transform 1s ease, color 1s ease, background 1s ease;
+
 		}
+        .login_btn:hover{
+            color: #33ccff;
+            background: white !important;
+            }
 		.login_btn:focus {
 			box-shadow: none !important;
 			outline: 0px !important;
