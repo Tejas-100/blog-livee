@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" href="{% static 'polls/images/head.jpg' %}" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{% static 'polls/assets/css/main.css' %}" />
-
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
 	</head>
@@ -27,6 +27,37 @@
 		}
 		.name123:hover{
 			color:skyblue;
+		}
+		header h2{
+			animation: bounceInLeft ;
+  			animation-duration: 4s;
+		}
+		header p{
+			animation: fadeInLeft;
+  			animation-duration: 4s;
+		}
+		#header{
+			animation: fadeInDown;
+  			animation-duration: 2s;
+		}
+		.post header .title h2{
+			animation: fadeInRight;
+  			animation-duration: 3s;
+		}
+		.post header .title p{
+			animation: fadeInRight;
+  			animation-duration: 3s;
+		}
+		#main {
+			animation: fadeInRight;
+  			animation-duration: 3s;
+		}
+		section .mini-post{
+			animation: fadeInLeft;
+  			animation-duration: 3s;
+		}
+		:root{
+			--animate-delay: 0s;
 		}
 	</style>
 	<body class="is-preload">
@@ -301,7 +332,7 @@
 												<h3><a href="article11">IS This the end of the world?</a></h3>
 												<time class="published" datetime="2015-10-08">February 5, 2020</time>
 											</header>
-											<a href="article11" class="image"><img src="{% static 'polls/images/belast.gif' %}" alt="" /></a>
+											<a href="article11" class="image"><img src="{% static 'polls/images/blast.gif' %}" alt="" /></a>
 										</article>
 									</li>
 									<li>

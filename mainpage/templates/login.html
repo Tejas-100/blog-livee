@@ -10,7 +10,7 @@
     <script src="{% static 'polls/assets/js/scroll.js' %}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 	<style>
         ::-webkit-scrollbar {
@@ -61,11 +61,14 @@
 			transition: transform 1s ease, color 1s ease;
             font-weight: 500;
             font-size: 2em;
+            animation: fadeInDown;
+  			animation-duration: 3s;
 
 		}
         #form-title:hover{
             color: purple;
         }
+
 /* env\Scripts\activate */
 /* py manage.py runserver */
 		.login_btn {
@@ -73,7 +76,8 @@
 			background: #33ccff !important;
 			color: white;
             transition: transform 1s ease, color 1s ease, background 1s ease;
-
+			animation: fadeInUp;
+  			animation-duration: 3s;
 		}
         .login_btn:hover{
             color: #33ccff;
